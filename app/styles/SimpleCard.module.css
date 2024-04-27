@@ -1,0 +1,197 @@
+.cardFirstHeading {
+    color: #F5434F;
+    font: "Poppins";
+    font-size: 27px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: -18px;
+}
+
+.cardSecondHeading {
+    font-size: 27px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.cardDescription {
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: -10px;
+    color: #4E4E4E;
+    width: 80%;
+}
+
+.cardContainer {
+    /* background-color: aqua; */
+    width: 380px;
+  height: 490px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 30px 20px #F5F5F5;
+  /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+}
+.cardImageDiv {
+    /* margin: auto;
+     */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.circleCardImageDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+    /* margin-top: 10px; */
+}
+
+.circleCardContainer {
+    width: 240px;
+    height: 280px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+
+    text-align: center;
+    /* box-shadow: 10px 10px 30px 20px #F5F5F5; */
+}
+
+.circleCardContainer > h2 {
+    color: #010F52;
+    font-weight: 600;
+    line-height: 50px;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.circleCardContainer > p {
+    color: #737576;
+    font-weight: 400;
+    line-height: 27px;
+    font-size: 18px;
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    /* margin-top: 16px; */
+    margin-top: -22px;
+    padding-left: 10px;
+}
+
+.easyCardContainer {
+    width: 500px;
+    height: 435px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    box-shadow: 10px 10px 30px 20px #F5F5F5;
+    text-align: center;
+}
+
+.easyCardContainer > h2 {
+    color: #000000;
+    font-weight: 500;
+    line-height: 45px;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.easyCardContainer > p {
+    color: #4E4E4E;
+    font-weight: 300;
+    line-height: 27px;
+    font-size: 16px;
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    /* margin-top: 16px; */
+    margin-top: -18px;
+    padding-left: 10px;
+    width: 21rem;
+}
+
+.AddQuestionBox {
+    width: 450px;
+    height: 100px;
+    box-shadow: 0px 5px 16px 0px #080F340F; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 5rem; */
+    border-radius: 16px;
+}
+
+.AddQuestionIconDiv {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: #F7F7FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.minusQuestionIconDiv {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #FF0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.AddQuestionDescriptionBox {
+    width: 450px;
+    height: 210px;
+    box-shadow: 0px 5px 16px 0px #080F340F; 
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 4rem;
+    border-radius: 16px;
+    
+}
+
+.AddQuestionBoxDiv {
+    width: 450px;
+    height: 100px;
+    /* box-shadow: 0px 5px 16px 0px #080F340F;  */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 5rem; */
+    border-radius: 16px;
+    /* margin-top: 4rem; */
+}
+
+.AddQuestionDescriptionText {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #6F6C90;
+    width: 23rem;
+    margin-top: -4rem;
+    margin-left: 2rem
+}

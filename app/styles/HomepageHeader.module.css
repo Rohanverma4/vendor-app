@@ -1,0 +1,38 @@
+
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    height: 100px;
+    margin: 0px 0px;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.logoImageDiv {
+    padding-left: 100px;
+
+}
+
+.otherPagesLink {
+    width: 500px;
+    background-color: #F5F5F5;
+    border-radius: 40px;
+    /* height: 70px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-left: 480px;
+    padding: 20px 52px;
+}
+
+.otherPagesLink > a {
+    text-decoration: none;
+    color: black;
+}
+
+.sellingActionButtonDiv {
+    padding: 25px;
+    margin-left: 80px;
+}

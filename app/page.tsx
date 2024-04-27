@@ -1,113 +1,292 @@
+// 'use client'
 import Image from "next/image";
+import HomepageHeader from "./components/HomepageHeader";
+import { Button, Carousel, ConfigProvider } from "antd";
+import homepageCarousel from "../public/assets/homepageCarousel.png";
+import buildBusinessBackground from "../public/assets/buildBusinessBackground.png"
+import styles from "./styles/HomepageCarousel.module.css"
+import { ArrowRightOutlined } from '@ant-design/icons';
+import step1Image from "./../public/assets/step1Image.png"
 
-export default function Home() {
+import SimpleCard from "./components/SimpleCard";
+import CircleImageCard from "./components/CircleImageCard";
+import earthLocation from "../public/assets/earthLocation.png"
+import storeBox from "../public/assets/storeBox.png"
+import internet from "../public/assets/internet.png"
+import growth from "../public/assets/growth.png"
+import buyers from "../public/assets/buyers.png"
+import earnMore from "../public/assets/earnMore.png"
+import growth2 from "../public/assets/growth2.png"
+import addtionalSupport from "../public/assets/additionalSupport.png"
+import burningRocket from "../public/assets/burningRocket.png"
+
+import EasyCard from "./components/EasyCard";
+import worldMap from "../public/assets/worldMap.png"
+import { Video } from "./components/Video";
+import AddQuestion from "./components/AddQuestion";
+import AddQuestionDescription from "./components/AddQuestionDescription";
+
+export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
+    <div>
+      <HomepageHeader title="vn"/>
+      <div>
+        <Carousel autoplay>
+          <div className={styles.container}>
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+                src={homepageCarousel}
+                alt="My SVG"
+                width={1920}
+                height={800}
+                className={styles.image}
+              />
+            <div className={styles.overlay}>
+              <div className={styles.headerImgText}>Become a seller on tradethreads.com</div>
+              <div className={styles.headerImgSecText}>Start your selling journey on Theadtrades.com and become a part of our 14 Lakh+ seller community</div>
+              <ConfigProvider
+                theme={{
+                  components: {
+                    Button: {
+                      colorPrimary: `#DE0505`,
+                      lineWidth: 0,
+                    },
+                  },
+                }}
+              >
+                <Button style={{
+                              width: `285px`,
+                              height: '60px',
+                              borderRadius: "10px",
+                              fontWeight: "600",
+                              fontSize: "large",
+                              marginTop: "15px"
+                              // backgroundColor: `${bgColor}`,
+                              // color: `${color}`
+                            }} type="primary" size='large' block>
+                  Start Selling <ArrowRightOutlined style={{ fontSize: '20px', fontWeight: "bold"}} />
+                </Button>
+              </ConfigProvider>
+            </div>
+          </div>
+          <div>
+            <Image
+              src={homepageCarousel}
+              alt="My SVG"
+              width={1920}
+              height={800}
             />
-          </a>
+          </div>
+          <div>
+            <Image
+              src={homepageCarousel}
+              alt="My SVG"
+              width={1920}
+              height={800}
+            />
+          </div>
+          <div>
+            <Image
+              src={homepageCarousel}
+              alt="My SVG"
+              width={1920}
+              height={800}
+            />
+          </div>
+          <div>
+            <Image
+              src={homepageCarousel}
+              alt="My SVG"
+              width={1920}
+              height={800}
+            />
+          </div>
+        </Carousel>
+      </div>
+      <div className={styles.cardContainerDiv}>
+        <h1 className={styles.cardContainerHeading}>How to sell on threadtrades.com In 3 Simple Steps </h1>
+        <div className={styles.cardDiv}>
+          <SimpleCard firstHeading={"STEP 1"} secondHeading={"CREATE AN ACCOUNT"} description={"Register using your mobile number. Enter your Name, Shop name and Pincode."} image={step1Image} />
+          <SimpleCard firstHeading={"STEP 2"} secondHeading={"COMPLETE SHOP KYC"} description={"Upload any one of shop's KYC documents like GSTIN, Shop & Establishment Licence."} image={step1Image} />
+          <SimpleCard firstHeading={"STEP 3"} secondHeading={"START EARNING"} description={"List your product and services on threadtrades.com start getting orders."} image={step1Image} />
+        </div>
+        <div className={styles.cardContainerButton}>
+        <ConfigProvider
+                theme={{
+                  components: {
+                    Button: {
+                      colorPrimary: `#DE0505`,
+                      lineWidth: 0,
+                    },
+                  },
+                }}
+              >
+                <Button style={{
+                              width: `285px`,
+                              height: '60px',
+                              borderRadius: "10px",
+                              fontWeight: "600",
+                              fontSize: "large",
+                              marginTop: "15px"
+                              // backgroundColor: `${bgColor}`,
+                              // color: `${color}`
+                            }} type="primary" size='large' block>
+                  Start Selling Now <ArrowRightOutlined style={{ fontSize: '20px', fontWeight: "bold"}} />
+                </Button>
+        </ConfigProvider>
         </div>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className={styles.buildBusinessContainer}>
+      <div className={styles.container}>
+            <Image
+                src={buildBusinessBackground}
+                alt="My SVG"
+                width={1818}
+                height={500}
+              />
+            <div className={styles.buildBusinessOverlay}>
+              <h2 className={styles.buildBusinessHeader}>Build your Business with us</h2>
+              <p className={styles.buildBusinessDescription}>Powerful platform gives deep research and big data analytics with global producer’s products supply to your door for your business</p>
+              <div className={styles.buildBusinessCardsDiv}>
+                <CircleImageCard heading={"190+"} description={"Single platform for 190+ countries"} image={earthLocation} />
+                <CircleImageCard heading={"15+"} description={"tailored categories of the products"} image={storeBox} />
+                <CircleImageCard heading={"1000+"} description={"variety of products in one domain"} image={internet} />
+                <CircleImageCard heading={"10+"} description={"service sectors integration for growth your business"} image={growth} />
+              </div>
+            </div>
+          </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className={styles.reasonContainerDiv}>
+        <h2 className={styles.reasonContainerHeader}>Why Choose Us ?</h2>
+        <p className={styles.reasonContainerPara}> We provide a comprehensive suite of services, including printing, delivery, design, packing, and high-quality raw materials.</p>
+        <div className={styles.reasonCardContainer}>
+          <div className={styles.reasonCardContainerPart}>
+            <EasyCard heading={"18 crore+ Buyers"} description={"Upload any one of shop's KYC documents like GSTIN, Shop & Establishment Licence"} image={buyers} />
+            <EasyCard heading={"Opportunity to earn more"} description={"Upload any one of shop's KYC documents like GSTIN, Shop & Establishment Licence"} image={earnMore} />
+          </div>
+          <div className={styles.reasonCardContainerPart} style={{marginTop: '3rem'}}>
+            <EasyCard heading={"Growth"} description={"Upload any one of shop's KYC documents like GSTIN, Shop & Establishment Licence"} image={growth2} />
+            <EasyCard heading={"Additional Support"} description={"Upload any one of shop's KYC documents like GSTIN, Shop & Establishment Licence"} image={addtionalSupport} />
+          </div>
+        </div>
       </div>
-    </main>
+      <div className={styles.videoCarouselContainer}>
+        <Carousel>
+          <div className={styles.videoCarousel}>
+            <Image
+                src={worldMap}
+                alt="My SVG"
+                width={1600}
+                height={800}
+                // className={styles.image}
+              />
+            <div className={styles.videoCarouselOverlay}>
+              <div className={styles.videoCarouselHeading}>Why Seller Love Threadtrade?</div>
+              <div className={styles.videoCarouselDescription}>Seller Success Stories</div>
+              <div className={styles.videoContainer}>
+                <div className={styles.videoDescriptionDiv}>
+                  <div className={styles.videoDescriptionText}>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+                  <div className={styles.videoDescriptionTitle}>Simon Árpád</div>
+                  <div  className={styles.videoDescriptionProfession}>Global Accountability Officer</div>
+                </div>
+                <div className={styles.videoDiv}>
+                  <Video />
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <div>
+            <Image
+              src={worldMap}
+              alt="My SVG"
+              width={1920}
+              height={800}
+            />
+          </div>
+          <div>
+            <Image
+              src={worldMap}
+              alt="My SVG"
+              width={1920}
+              height={800}
+            />
+          </div>
+          <div>
+            <Image
+              src={worldMap}
+              alt="My SVG"
+              width={1920}
+              height={800}
+            />
+          </div>
+          <div>
+            <Image
+              src={worldMap}
+              alt="My SVG"
+              width={1920}
+              height={800}
+            />
+          </div> */}
+        </Carousel>
+      </div>
+      <div className={styles.questionBoxContainer}>
+        <div className={styles.questionBoxHeader}>Frequently Asked Questions</div>
+        <div className={styles.questionBoxDiv}>
+          <div className={styles.questionBoxSection}>
+            <AddQuestion question={"How to launch a Webflow website?"} />
+            <AddQuestion question={"How to launch a Webflow website?"} />
+            <AddQuestionDescription question={"Why is Webflow the best nocode tool?"} description={"Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor"} />
+          </div>
+          <div className={styles.questionBoxSection}>
+            <AddQuestion question={"Who founded BRIX Templates?"} />
+            <AddQuestion question={"Who founded BRIX Templates?"} />
+            <AddQuestionDescription question={"Why is Webflow the best nocode tool?"} description={"Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor"} />
+          </div>
+        </div>
+      </div>
+      <div className={styles.buildBusinessContainer}>
+      <div className={styles.container}>
+            <Image
+                src={burningRocket}
+                alt="My SVG"
+                width={1800}
+                height={800}
+              />
+            <div className={styles.burningRocketOverlay}>
+              <div className={styles.burningRocketHeader}>Start your Seller Journey</div>
+              <div className={styles.burningRocketDescription}>Join our family of 14 Lakh+ businesses who sell on Amazon.in</div>
+              <ConfigProvider
+                theme={{
+                  components: {
+                    Button: {
+                      colorPrimary: `#FFF9F9`,
+                      lineWidth: 0,
+                    },
+                  },
+                }}
+              >
+                <Button style={{
+                              width: `285px`,
+                              height: '60px',
+                              borderRadius: "32px",
+                              fontWeight: "600",
+                              fontSize: "large",
+                              marginTop: "15px",
+                              // backgroundColor: `${bgColor}`,
+                              color: `#000000`
+                            }} type="primary" size='large' block>
+                  Start Selling Now <ArrowRightOutlined style={{ fontSize: '20px', fontWeight: "bold"}} />
+                </Button>
+              </ConfigProvider>
+            </div>
+          </div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
   );
 }
