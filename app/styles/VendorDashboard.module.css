@@ -1,0 +1,65 @@
+
+.navbarContainer {
+    background-color: #F5F5F5;
+    height: 60px;
+    /* width: 100px; */
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.navbarActiveText {
+    color: #FF0000;
+}
+
+.navbarContainer > div {
+    cursor: pointer;
+}
+
+.vendorDataGridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* background-color: #2196F3; */
+    /* padding: 10px; */
+    width: 94.5%;
+    /* margin: 1.5rem auto; */
+    margin-top: 2rem;
+    gap: 2.5rem 4rem
+}
+
+.vendorDataContainer {
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.vendorDataHeader {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #000000;
+}
+
+.vendorCardContainer {
+    border: 1px solid #C5CAD4;
+    width: 280px;
+    height: 125px;
+    border-radius: 4px;
+}
+
+.vendorCardValue {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 48px;
+    color: #000000;
+    margin: 30px 20px 0px;
+}
+
+.vendorCardTitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #2F3237;
+    margin: 5px 20px 0px;
+}

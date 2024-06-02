@@ -7,17 +7,24 @@ interface ChildComponentProps {
   type: string;
   size: string;
   width: string;
+  onChange: (value : number|null) => void;
+  value:string;
 }
 
-const SimpleNumberInput: React.FC<ChildComponentProps> = ({type,title, size, width}) => {
+const SimpleNumberInput: React.FC<ChildComponentProps> = ({type,title, size, width, onChange, value}) => {
   return (
     <div>
        <p className={Styles.inputTitleText}>{title}</p>
           <InputNumber 
+               onChange={onChange}
                style={{
                           width: `${width}`,
                         }} 
-                className={Styles.inputFieldClass} size={size === "large" ? "large" : "small"} type={type} controls={false} />
+                className={Styles.inputFieldClass} 
+                size={size === "large" ? "large" : "small"} 
+                type={type} 
+                controls={false}
+                 />
     </div>
   )
 }

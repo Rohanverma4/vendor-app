@@ -1,0 +1,22 @@
+
+.inputTitleText {
+    /* font-family: 'Poppins'; */
+    font-weight: 600 !important;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111111;    ;
+}
+
+.inputFieldClass {
+    width: '700px';
+}
+
+.simpleInputFieldClass {
+    height: 40px;
+    border: 1px solid #DDDDDD;
+    margin-top: 8px;
+}
+
+.inputFieldContainer {
+    margin: 1.8rem 2rem;
+}

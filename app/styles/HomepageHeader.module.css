@@ -36,3 +36,45 @@
     padding: 25px;
     margin-left: 80px;
 }
+
+.vendorHeaderContainer {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    height: 90px;
+    margin: 0px 0px;
+    /* justify-content: center; */
+    align-items: center;
+    box-shadow: 0px 4px 8px 0px #f8f8fa;
+}
+
+.vendorLogoImageDiv {
+    padding-left: 100px;
+}
+
+
+.headerProfileContainer {
+    display: flex;
+    width: 180px;
+    height: 90px;
+    /* background-color: #F3F3F9; */
+    margin-top: -8px;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+    gap:10px
+}
+
+.profileTextHeader {
+    color: #495057;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.profileText {
+    color: #9599AD;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}

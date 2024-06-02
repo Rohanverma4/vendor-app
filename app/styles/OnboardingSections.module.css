@@ -1,0 +1,199 @@
+.gstNumberContainer {
+    border: 1px solid #DDDDDD;
+    height: 340px;
+    width: 1100px;
+    margin-top: 2.5rem;
+
+}
+
+.gstNumberHeading {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 35px;
+    color: #111111;
+    margin-left: 2rem;
+}
+
+.gstInputDetails {
+    color: #4E4E4E;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+    margin: -0.5rem 2rem 0rem;
+}
+
+.gstApplyNowSection {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 2rem;
+    margin-top: -1rem;
+    color: #4E4E4E;
+}
+
+.gstDetailsContainer {
+    border: 1px solid #DDDDDD;
+    height: 340px;
+    width: 1100px;
+    margin-top: 1.5rem;
+}
+
+.gstDetailsGridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* background-color: #2196F3; */
+    /* padding: 10px; */
+    width: 94.5%;
+    margin: 1.5rem auto;
+    gap: 2rem 0rem
+}
+
+.gstDetailsGridItem {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    width: 345px;
+    /* text-align: center; */
+}
+
+.gstDetailsDescription {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #263238;
+    margin: 1rem 2rem;
+}
+
+.gstDetailsTitle {
+    color: #4E4E4ECC;
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.gstDetailsValue {
+    color: #4E4E4E;
+    line-height: 24px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.basicInformationContainer {
+    border: 1px solid #DDDDDD;
+    height: 400px;
+    width: 1100px;
+    margin-top: 2.5rem;
+}
+
+.basicInformationHeading {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #111111;
+    margin: 2rem 2rem 0rem;
+}
+
+.bussinessDetailsContainer {
+    border: 1px solid #DDDDDD;
+    height: 340px;
+    width: 1100px;
+    margin-top: 2.5rem;
+}
+
+.bussinessDetailsHeading {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 35px;
+    color: #111111;
+    margin-left: 2rem;
+}
+
+.warehouseDetailsContainer {
+    border: 1px solid #DDDDDD;
+    height: 820px;
+    width: 1100px;
+    margin-top: 2.5rem;
+}
+
+.warehouseDetailsHeading {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 35px;
+    color: #111111;
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+
+.bankDetailsContainer {
+    border: 1px solid #DDDDDD;
+    height: 420px;
+    width: 1100px;
+    margin-top: 2.5rem;
+}
+
+.bankDetailsHeading {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 35px;
+    color: #111111;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+}
+
+.brandDetailsContainer {
+    border: 1px solid #DDDDDD;
+    height: 290px;
+    width: 1100px;
+    margin-top: 2.5rem;
+}
+
+.brandDetailsHeading {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 35px;
+    color: #111111;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.brandDetailsDescription {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #4E4E4E;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.declarationContainer {
+    border: 1px solid #DDDDDD;
+    height: 250px;
+    width: 1100px;
+    margin-top: 2.5rem;
+}
+
+.declarationHeading {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #000000;
+    margin-left: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.declarationCheckboxDescription {
+    font-size: 15px;
+    line-height: 24px;
+    color: #111111;
+    font-weight: 400;
+    display: flex;
+    margin-left: 2rem;
+    /* margin-top: 1.5rem; */
+}
+
+.declarationCheckboxDescription > div {
+    width: 39rem;
+    margin-top: 1.5rem;
+}

@@ -1,0 +1,52 @@
+.imageUploadSection .ant-upload-select {
+    width: 1260px !important;
+    height: 480px !important;
+    margin: 20px auto !important;
+}
+
+.ant-upload-list-item-container {
+    width: 1260px !important;
+    height: 480px !important;
+    margin: 20px auto !important;
+}
+
+.text-container {
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    transition: height 0.3s ease;
+  }
+  
+  .text-content {
+    font-size: 14px;
+    color: #797F86;
+    line-height: 16px;
+    font-weight: 500;
+    margin-top: -6px;
+    max-height: 100px; /* Adjust this value according to your container's height */
+    overflow: hidden;
+  }
+  
+  .text-content.expanded {
+    max-height: 500px; /* Adjust this value to fit the full content */
+  }
+  
+  .view-more-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-size: 24px;
+    cursor: pointer;
+    color: #007bff;
+    background-color: white;
+    border-radius: 4px;
+  }
